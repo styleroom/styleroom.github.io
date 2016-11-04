@@ -25,3 +25,6 @@
 #brands .card-block {
     text-align: center;
 }
+.description {
+    display: none;
+}

@@ -41,7 +41,7 @@
         var url = window.location.href;
         var arr_url = url.split('/');
         var link = arr_url[arr_url.length - 1];
-        if (url !== 'https://styleroom.github.io') {
+        if (url !== 'https://styleroom.github.io' || url !== 'https://styleroom.github.io/') {
             $('ul.navbar-nav a[href*="'+link+'"]').addClass('active');
         } else {
             $('ul.navbar-nav a:first-child').addClass('active');

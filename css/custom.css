@@ -1,0 +1,9 @@
+#content, #template_sidebar {
+    margin: 10px 0 0 0;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1220px;
+        max-width: 100%;
+    }
+}

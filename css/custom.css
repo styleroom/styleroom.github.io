@@ -16,6 +16,9 @@
 .card {
     border-radius: 0;
 }
-.card-block {
+.card-block, .card-header {
     padding: 1rem;
+}
+.card h4 {
+    font-size: 1.15rem;
 }

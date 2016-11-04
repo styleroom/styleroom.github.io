@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="styleroom">
+    <link rel="icon" href="/favicon.ico">
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div id="template_menu"></div>
+
+<div id="page" class="container">
+    <h1>Бренды</h1>
+    <p class="lead">
+        С чем я умею работать
+    </p>
+    <div id="brands"></div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $.getJSON('../db/logo.json', function(data) {
+            var items = [];
+            $.each(data, function(key, val) {
+                items.push('<div class="col-md-4"><div class="card"><div class="card-block">' +
+                        '<img src="..'+val+'" class="img-fluid" alt=""></div></div></div>');
+            });
+            $('<div/>', {
+                'class': 'row',
+                html: items.join('')
+            }).appendTo('#brands');
+        });
+    });
+</script>
+
+<footer class="footer">
+    <div class="container">
+        <div id="template_footer"></div>
+    </div>
+</footer>
+
+<script src="../js/tether.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/ie10-viewport-bug-workaround.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+
+</html>

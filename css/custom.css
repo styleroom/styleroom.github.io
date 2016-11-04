@@ -22,3 +22,6 @@
 .card h4 {
     font-size: 1.15rem;
 }
+#brands .card-block {
+    text-align: center;
+}

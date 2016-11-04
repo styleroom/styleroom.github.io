@@ -34,5 +34,5 @@
 }
 .navbar-nav a.active {
     font-weight: bold;
-    color: crimson !important;
+    color: #0275d8 !important;
 }

@@ -1,0 +1,42 @@
+{
+  "site_name":"Full stack web-разработчик",
+  "site_description":"Личная страница full stack web-разработчика на github.com",
+  "portfolio":[
+    {
+      "name":"Микояновский мясокомбинат",
+      "href":"http://mikoyan.ru",
+      "anons":"Yii 1, Bootstrap 3",
+      "screen":""
+    },
+    {
+      "name":"ЗАО АВК ЭКСИМА",
+      "href":"http://exima.ru",
+      "anons":"Yii 2, Bootstrap 3",
+      "screen":""
+    },
+    {
+      "name":"Я - русский",
+      "href":"http://iamruss.ru",
+      "anons":"Yii2, Bootstrap 3 (ранее - Wordpress 4.4)",
+      "screen":""
+    },
+    {
+      "name":"БыстроКнига",
+      "href":"http://bistrokniga.ru",
+      "anons":"Yii2, Bootstrap 3",
+      "screen":""
+    },
+    {
+      "name":"Частный дизайнер интерьера",
+      "href":"http://styleroom.ru",
+      "anons":"Yii2, Bootstrap 3",
+      "screen":""
+    },
+    {
+      "name":"",
+      "href":"",
+      "anons":"",
+      "screen":""
+    }
+  ]
+}

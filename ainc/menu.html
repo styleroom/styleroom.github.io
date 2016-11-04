@@ -11,21 +11,21 @@
             <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
                 <a class="navbar-brand" href="#">styleroom</a>
                 <ul class="nav navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../">
                             Главная
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/page/working-tools.html">
+                        <a class="nav-link" href="../page/working-tools.html">
                             Инструменты
                         </a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link" href="#">
-                            0. More nav
+                    <li class="nav-item">
+                        <a class="nav-link" href="../page/useful-links.html">
+                            Ссылки
                         </a>
-                    </li>-->
+                    </li>
 <!--                    <li class="nav-item">
                         <a class="nav-link" href="#">
                             0. Last link
@@ -36,3 +36,15 @@
         </div>
     </nav>
 </div>
+<script>
+    $(document).ready(function(){
+        var url = window.location.href;
+        var arr_url = url.split('/');
+        var link = arr_url[arr_url.length - 1];
+        if (url !== 'https://styleroom.github.io') {
+            $('ul.navbar-nav a[href*="'+link+'"]').addClass('active');
+        } else {
+            $('ul.navbar-nav a:first-child').addClass('active');
+        }
+    });
+</script>

@@ -1,0 +1,46 @@
+[
+  {
+    "name": "phpstorm",
+    "href": "https://www.jetbrains.com/phpstorm/"
+  },
+  {
+    "name": "youtrack",
+    "href": "http://jetbrains.ru/products/youtrack/"
+  },
+  {
+    "name": "jsfiddle.net",
+    "href": "https://jsfiddle.net"
+  },
+  {
+    "name": "tools.pingdom.com",
+    "href": "https://tools.pingdom.com"
+  },
+  {
+    "name": "gtmetrix.com",
+    "href": "https://gtmetrix.com"
+  },
+  {
+    "name": "learn.javascript.ru",
+    "href": "https://learn.javascript.ru"
+  },
+  {
+    "name": "poiskvps.ru",
+    "href": "https://poiskvps.ru/"
+  },
+  {
+    "name": "jquery.page2page.ru",
+    "href": "http://jquery.page2page.ru/index.php5/Заглавная_страница"
+  },
+  {
+    "name": "tutorialspoint.com",
+    "href": "http://www.tutorialspoint.com"
+  },
+  {
+    "name": "getbootstrap.com",
+    "href": "http://getbootstrap.com"
+  },
+  {
+    "name": "",
+    "href": ""
+  }
+]

@@ -28,3 +28,11 @@
 .description {
     display: none;
 }
+.btn-marg {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.navbar-nav a.active {
+    font-weight: bold;
+    color: crimson !important;
+}

@@ -1,2 +1,2 @@
 # styleroom.github.io
-личная страница на github
+личная страница Full stack web-разработчика на github

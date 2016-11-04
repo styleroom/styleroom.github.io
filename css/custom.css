@@ -11,5 +11,11 @@
     }
 }
 * {
+    border-radius: 0 !important;
+}
+.card {
     border-radius: 0;
+}
+.card-block {
+    padding: 1rem;
 }

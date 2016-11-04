@@ -1,3 +1,6 @@
+#template_sidebar {
+    font-size: 0.75rem;
+}
 #content, #template_sidebar {
     margin: 10px 0 0 0;
 }
@@ -6,4 +9,7 @@
         width: 1220px;
         max-width: 100%;
     }
+}
+* {
+    border-radius: 0;
 }

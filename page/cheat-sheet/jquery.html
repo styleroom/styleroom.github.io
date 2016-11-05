@@ -1,8 +1,21 @@
 <div class="card">
-    <div class="card-header">
-        Название подсказки
-    </div>
     <div class="card-block">
-        Содержание подсказки
+        <h4 class="card-title">
+            Получение JSON-файла и его перерборка
+        </h4>
+ <pre>
+$.getJSON('../path/to.json', function(data) {
+    var items = [];
+    $.each(data, function(key, val) {
+        if (val.name.length !== 0) {
+            items.push('a href="'+val.href+'" target="_blank">'+val.name+'a');
+        }
+    });
+    $('<div/>', {
+        'class': 'inner',
+        html: items.join('')
+    }).appendTo('#useful-links');
+});
+</pre>
     </div>
 </div>

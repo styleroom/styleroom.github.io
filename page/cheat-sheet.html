@@ -27,29 +27,30 @@
         <div class="col-md-9" id="content">
             <h1>Подсказки Cheet Sheet</h1>
             <hr>
-
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>
-                </li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane fade in active" id="profile">...</div>
-                <div role="tabpanel" class="tab-pane fade" id="buzz">bbb</div>
-                <div role="tabpanel" class="tab-pane fade" id="references">ccc</div>
-            </div>
+            <ul class="nav nav-tabs" role="tablist"></ul>
+            <div id="wrap-cheat-sheet" class="tab-content pre-scrollable"></div>
         </div>
         <div class="col-md-3" id="template_sidebar_3"></div>
     </div>
 </div>
+
+<script>
+$(function(){
+    $.getJSON('../db/cheat-sheet.json', function(data){
+        $.each(data, function(key, val){
+
+            $('ul.nav.nav-tabs').append('' +
+                    '<li class="nav-item">' +
+                    '<a class="nav-link" href="#'+key+'" role="tab" data-toggle="tab">'+key+'</a>' +
+                    '</li>');
+            $('.tab-content').append('<div role="tabpanel" class="tab-pane fade" id="'+key+'">содержание</div>');
+            $('#'+key).load(val);
+        });
+        $('ul.nav.nav-tabs a:eq(0)').addClass('active');
+        $('.tab-content .tab-pane:eq(0)').addClass('in active');
+    });
+});
+</script>
 
 <div id="template_footer"></div>
 

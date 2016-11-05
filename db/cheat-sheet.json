@@ -1,0 +1,11 @@
+{
+  "git":"../page/cheat-sheet/git.html",
+  "jquery":"../page/cheat-sheet/jquery.html",
+  "javascript":"../page/cheat-sheet/javascript.html",
+  "linux":"../page/cheat-sheet/linux.html",
+  "mysql":"../page/cheat-sheet/mysql.html",
+  "php":"../page/cheat-sheet/php.html",
+  "yii":"../page/cheat-sheet/yii.html",
+  "phpstorm":"../page/cheat-sheet/phpstorm.html",
+  "less":"../page/cheat-sheet/less.html"
+}

@@ -1,3 +1,8 @@
+#wrap-cheat-sheet {
+    max-height: 600px;
+    padding: 20px 20px 0 0;
+    /*overflow-y: scroll;*/
+}
 #template_sidebar {
     font-size: 0.75rem;
 }

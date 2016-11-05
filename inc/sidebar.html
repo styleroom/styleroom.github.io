@@ -73,13 +73,40 @@
             </div>
         </div><!-- itsme -->
 
-        <ul class="list-group">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Morbi leo risus</li>
-            <li class="list-group-item">Porta ac consectetur ac</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul><!-- list-group -->
+        <div class="card" style="border: none;">
+            <div id="random-brand"></div>
+            <div class="clearfix"></div>
+        </div><!-- random-brand -->
+
+        <div class="list-group">
+            <a target="_blank" href="http://mikoyan.ru" class="list-group-item">http://mikoyan.ru</a>
+            <a target="_blank" href="http://exima.ru" class="list-group-item">http://exima.ru</a>
+            <a target="_blank" href="http://trade.mikoyan.ru" class="list-group-item">http://trade.mikoyan.ru</a>
+            <a target="_blank" href="http://iamruss.ru" class="list-group-item">http://iamruss.ru</a>
+            <a target="_blank" href="http://bistrokniga.ru" class="list-group-item">http://bistrokniga.ru</a>
+            <a target="_blank" href="http://dolgoprud.org" class="list-group-item">http://dolgoprud.org</a>
+        </div>
 
     </div>
 </div>
+<script>
+$(function(){
+
+    // random brand
+    $.getJSON('../db/logo.json',function(data){
+        /*// 0 -> 10
+         Math.floor(Math.random() * 11);*/
+        /*// 5 -> 20
+         Math.floor(Math.random() * 16) + 5;*/
+        var amount = data.length;
+        var part = parseInt((amount / 2).toFixed());
+        var img_1 = Math.floor(Math.random() * part);
+        var img_2 = Math.floor(Math.random() * (amount-part)) + part;
+        var random_img = '' +
+                '<div class="col-md-6"><div class="row"><img src="..'+data[img_1]+'" class="img-thumbnail" alt="случайный бренд"></div></div>' +
+                '<div class="col-md-6"><div class="row"><img src="..'+data[img_2]+'" class="img-thumbnail" alt="случайный бренд"></div></div>' +
+                '';
+        $('#random-brand').html(random_img);
+    });
+});
+</script>

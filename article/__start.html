@@ -23,28 +23,17 @@
 </div>
 
 <div id="page" class="container">
-    <h1>Полезные ссылки</h1>
-    <hr>
-    <div id="useful-links"></div>
-    <div class="clearfix"></div>
+    <div class="row">
+        <div class="col-md-7" id="content">
+            <h1>Full stack web-разработчик</h1>
+            <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
+            <p>
+                <img class="img-thumbnail" src="http://img-fotki.yandex.ru/get/53078/73314072.ab/0_f2943_c437a091_XL.jpg" alt="">
+            </p>
+        </div>
+        <div class="col-md-5" id="template_sidebar"></div>
+    </div>
 </div>
-
-<script>
-    $(document).ready(function(){
-        $.getJSON('../db/useful-links.json', function(data) {
-            var items = [];
-            $.each(data, function(key, val) {
-                if (val.name.length !== 0) {
-                    items.push('<a class="btn btn-md btn-secondary btn-marg" href="'+val.href+'" target="_blank">'+val.name+'</a>');
-                }
-            });
-            $('<div/>', {
-                'class': 'inner',
-                html: items.join('')
-            }).appendTo('#useful-links');
-        });
-    });
-</script>
 
 <div id="template_footer"></div>
 

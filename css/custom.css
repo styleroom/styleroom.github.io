@@ -1,7 +1,7 @@
 #template_sidebar {
     font-size: 0.75rem;
 }
-#content, #template_sidebar {
+#content, #template_sidebar, #template_sidebar_3 {
     margin: 10px 0 0 0;
 }
 @media (min-width: 1200px) {
